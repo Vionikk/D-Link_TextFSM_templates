@@ -1,0 +1,8 @@
+Value VID (\d+)
+Value VLAN_Name (\S+)
+Value MAC_Address (\S+)
+Value Port (CPU|\d+)
+Value Type (\S+)
+
+Start
+ ^${VID} +${VLAN_Name} +${MAC_Address} +${Port} +${Type} -> Record

@@ -1,0 +1,9 @@
+Value Port (\S+)
+Value Type (\S+| )
+Value State (Enabled|Disabled)
+Value Settings (\S+)
+Value Connection_Speed (\S+|Link Down)
+Value Address_Learning (Enabled|Disabled)
+
+Start
+ ^${Port} +${Type} +${State} +${Settings} +${Connection_Speed} +${Address_Learning} -> Record

@@ -1,0 +1,30 @@
+Value Device (\S+)
+Value Mac (\S+)
+Value IP (\S+)
+Value VLAN (\S+)
+Value Subnet (\S+)
+Value Gateway (\S+)
+Value Boot (\S+)
+Value Firmware (\S+)
+Value Hardware (\S+)
+Value Name (\S+)
+Value Location (\S+)
+Value Telnet (\S+.+)
+Value SSH (\S+.+)
+Value Clipaging (\S+)
+
+Start
+  ^.*Device Type.*: ${Device}
+  ^.*MAC Address.*: ${Mac}
+  ^.*IP Address.*: ${IP}
+  ^.*VLAN Name.*: ${VLAN}
+  ^.*Subnet Mask.*: ${Subnet}
+  ^.*Default Gateway.*: ${Gateway}
+  ^.*Boot PROM Version.*:( \S+ | )${Boot}
+  ^.*Firmware Version.*:( \S+ | )${Firmware}
+  ^.*Hardware Version.*: ${Hardware}
+  ^.*System Name.*: ${Name}
+  ^.*System Location.*: ${Location}
+  ^.*TELNET.*: ${Telnet}
+  ^.*SSH.*: ${SSH}
+  ^.*Clipaging.*: ${Clipaging} -> Record

@@ -1,0 +1,17 @@
+Value VID (\S+)
+Value VLAN_Name (\S+)
+Value VLAN_Type (\S+)
+Value Advertisement (\S+)
+Value VLAN_Member_ports (\S+)
+Value VLAN_Static_ports (\S+)
+Value VLAN_Current_Tagged_Ports (\S+)
+Value VLAN_Current_Untagged_Ports (\S+)
+
+Start
+  ^.*VID.*: ${VID} .*VLAN Name.* : ${VLAN_Name}
+  ^.*VLAN Type.*: ${VLAN_Type} .*Advertisement.* : ${Advertisement}
+  ^.*Member Ports.*: ${VLAN_Member_ports}
+  ^.*Static Ports.*: ${VLAN_Static_ports} 
+  ^.*Current Tagged Ports.*: ${VLAN_Current_Tagged_Ports} 
+  ^.*Current Untagged Ports.*: ${VLAN_Current_Untagged_Ports} -> Record
+

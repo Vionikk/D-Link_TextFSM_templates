@@ -1,0 +1,6 @@
+Value Result (Success.|Fail!)
+
+Start
+  ^${Result} -> Record
+
+

@@ -1,0 +1,7 @@
+Value INTERFACE (\S+)
+Value IP (\d+(\.\d+){3})
+Value MAC (.+)
+Value TYPE (\S+)
+
+Start
+ ^${INTERFACE}.+ ${IP}.+ ${MAC}.+ ${TYPE} -> Record

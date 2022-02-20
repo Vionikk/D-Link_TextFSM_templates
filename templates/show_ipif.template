@@ -1,0 +1,26 @@
+Value IP_Interface (\S+)
+Value VLAN_Name (\S+)
+Value Interface_Admin_State (Enabled|Disabled)
+Value DHCPv6_Client_State (Enabled|Disabled)
+Value Link_Status (\S+)
+Value IPv4_Address (\S+)
+Value IPv4_State (Enabled|Disabled)
+Value IPv6_State (Enabled|Disabled)
+Value DHCP_Option12_State (Enabled|Disabled)
+Value DHCP_Option12_Host_Name (\S+)
+
+Start
+  ^.*IP Interface.*: ${IP_Interface} 
+  ^.*VLAN Name.* : ${VLAN_Name}
+  ^.*Interface Admin State.*: ${Interface_Admin_State} 
+  ^.*DHCPv6 Client State.* : ${DHCPv6_Client_State}
+  ^.*Link Status.* : ${Link_Status}
+  ^.*DHCPv6 Client State.* : ${DHCPv6_Client_State}
+  ^.*Link Status.*: ${Link_Status}
+  ^.*IPv4 Address.*: ${IPv4_Address}
+  ^.*IPv4 State.*: ${IPv4_State}
+  ^.*IPv6 State.*: ${IPv6_State}
+  ^.*DHCP Option12 State.*: ${DHCP_Option12_State}
+  ^.*DHCP Option12 Host Name.*: ${DHCP_Option12_Host_Name} -> Record
+
+
