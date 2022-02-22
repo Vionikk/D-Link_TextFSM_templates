@@ -1,0 +1,8 @@
+Value IP_Address (\d+(\.\d+){3})
+Value MAC_Address (.+)
+Value Status (\S+)
+Value Left_Time (\d+)
+Value Port (\d+)
+
+Start
+ ^ ${IP_Address} +${MAC_Address} +${Status} +${Left_Time} +${Port} -> Record
