@@ -1,0 +1,12 @@
+Value Port (\d+)
+Value Type (\S+)
+Value Link_Status (Link Up|Link Down|-)
+Value Test_Result (\S+)
+Value Cable_Length (\d+|-)
+Value Pair (\d+)
+Value Failure (Open|Short|Crosstalk|Unknow|NA)
+Value Distance (\d+|-)
+
+Start
+ ^${Port}.+ ${Type}.+ ${Link_Status}.+ ${Test_Result}.+ ${Cable_Length} -> Record
+ ^.*Pair* +${Pair} +${Failure}.+ *at* +${Distance} -> Continue.Record

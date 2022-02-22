@@ -1,6 +1,6 @@
 Value Port (\S+)
-Value Description (.+)
+Value Description (\S.*?)
 
 Start
  ^${Port}
- ^.*Description.*: ${Description} -> Record
+ ^.*Description:(?:\s+${Description})?\s*$$ -> Record

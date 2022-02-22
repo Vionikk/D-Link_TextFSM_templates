@@ -39,7 +39,7 @@ Port      State/        Settings            Connection        Address  AutoSpeed
           Description: Fl_5_R
 11       Enabled  Auto/Disabled         Link Down             Enabled  Disabled
           Auto
-          Description:
+          Description: 
 12       Enabled  Auto/Disabled         Link Down             Enabled  Disabled
           Auto
           Description:
@@ -103,12 +103,9 @@ Notes:(F)indicates fiber medium and (C)indicates copper medium in a combo port
           Description:
 
 
-
-
-
 '''
 
-with open('show_ports.template') as template:
+with open('show_ports_description.template') as template:
     fsm = textfsm.TextFSM(template)
     result = fsm.ParseText(show_ports)
 
