@@ -1,0 +1,148 @@
+- Port: '1'
+  Results:
+  - Pair 2 Open
+  - Pair 3 Open
+  STATUS: Link Down
+  Type: 100BASE-T
+- Port: '2'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '3'
+  Results:
+  - Pair 2 Open
+  - Pair 3 Open
+  STATUS: Link Down
+  Type: 100BASE-T
+- Port: '4'
+  Results:
+  - Pair 2 Open
+  - Pair 3 Open
+  STATUS: Link Down
+  Type: 100BASE-T
+- Port: '5'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '6'
+  Results:
+  - Pair 2 Open
+  - Pair 3 Open
+  STATUS: Link Down
+  Type: 100BASE-T
+- Port: '7'
+  Results:
+  - 'No'
+  STATUS: Link Down
+  Type: 100BASE-T
+- Port: '8'
+  Results:
+  - Pair 2 Open
+  - Pair 3 Open
+  STATUS: Link Down
+  Type: 100BASE-T
+- Port: '9'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '10'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '11'
+  Results:
+  - Pair 2 Open
+  - Pair 3 Open
+  STATUS: Link Down
+  Type: 100BASE-T
+- Port: '12'
+  Results:
+  - Pair 2 Open
+  - Pair 3 Open
+  STATUS: Link Down
+  Type: 100BASE-T
+- Port: '13'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '14'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '15'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '16'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '17'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '18'
+  Results:
+  - Pair 2 Open
+  - Pair 3 Open
+  STATUS: Link Down
+  Type: 100BASE-T
+- Port: '19'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '20'
+  Results:
+  - 'No'
+  STATUS: Link Down
+  Type: 100BASE-T
+- Port: '21'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '22'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '23'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '24'
+  Results:
+  - OK
+  STATUS: Link Up
+  Type: 100BASE-T
+- Port: '25'
+  Results:
+  - '-'
+  STATUS: '-'
+  Type: 1000BASE-T
+- Port: '26'
+  Results:
+  - '-'
+  STATUS: '-'
+  Type: 1000BASE-T
+- Port: '27'
+  Results:
+  - '-'
+  STATUS: '-'
+  Type: 1000BASE-X
+- Port: '28'
+  Results:
+  - '-'
+  STATUS: '-'
+  Type: 1000BASE-X
