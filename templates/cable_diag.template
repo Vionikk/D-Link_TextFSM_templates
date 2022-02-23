@@ -1,0 +1,20 @@
+Value Required Port (\d+)
+Value Type (\S+)
+Value STATUS (Link Up|Link Down|-)
+Value List Results (\S+ \d \S+|\S+|\S+ \S+|-)
+
+Start
+  ^\s*$$
+  ^\w+\s+[TtYyPpEe]{4}.*$$ -> RESULT
+  # Capture time-stamp if vty line has command time-stamping turned on
+  ^Load\s+for\s+
+  ^Time\s+source\s+is
+
+RESULT
+  ^\d+ -> Continue.Record
+  ^${Port}\s+${Type}\s+${STATUS}\s*$$
+  ^${Port}\s+${Type}\s+${STATUS}\s+${Results},* -> Continue
+  ^\s+${Results},* -> Continue
+
+Done
+  ^.*
