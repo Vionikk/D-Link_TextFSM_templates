@@ -10,7 +10,18 @@ Command: create vlan test tag 2
 
  The VLAN already exists. 
 
-Fail!                                                    
+Fail!    
+
+Command: show
+
+Ambiguous token: 
+vlan
+vlan_trunk
+
+Command: show
+
+Next possible completions: 
+
 
 '''
 

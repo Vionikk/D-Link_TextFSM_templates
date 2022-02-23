@@ -1,4 +1,4 @@
-Value Result (Success.|Fail!)
+Value Result (Success.|Fail!|Next possible completions:|Ambiguous token:)
 
 Start
   ^${Result} -> Record
