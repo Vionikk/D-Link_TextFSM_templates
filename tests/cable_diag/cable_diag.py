@@ -2,7 +2,7 @@ import textfsm
 from pprint import pprint
 import yaml
 
-test = '''
+test_cisco = '''
 VLAN Name                             Status    Ports
 ---- -------------------------------- --------- -------------------------------
 1    default                          active    Gi0/1
@@ -52,8 +52,10 @@ Port      Type      Link Status    Test Result                 Cable Length (M)
 4       100BASE-T   Link Down      Pair 2 Open      at  46M          -
                                    Pair 3 Open      at  45M
 5       100BASE-T   Link Up        OK                                87
-6       100BASE-T   Link Down      Pair 2 Open      at  42M          -
-                                   Pair 3 Open      at  42M
+6       100BASE-T   Link Down      Pair 1 Open      at  45M          -
+                                   Pair 2 Open      at  45M
+                                   Pair 3 Open      at  45M
+                                   Pair 4 Open      at  45M
 7       100BASE-T   Link Down      No Cable                          -
 8       100BASE-T   Link Down      Pair 2 Open      at  42M          -
                                    Pair 3 Open      at  42M

@@ -28,8 +28,10 @@
   Type: 100BASE-T
 - Port: '6'
   Results:
+  - Pair 1 Open
   - Pair 2 Open
   - Pair 3 Open
+  - Pair 4 Open
   STATUS: Link Down
   Type: 100BASE-T
 - Port: '7'
