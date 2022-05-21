@@ -1,0 +1,9 @@
+Value IPAddress (\d+(\.\d+){3})
+Value Netmask (\d+)
+Value Gateway (\d+(\.\d+){3})
+Value Interface (\S+|\d+)
+Value Hops (\d+)
+Value Protocol (\S+)
+
+Start
+ ^(${IPAddress})/(${Netmask}).+ ${Gateway}.+ ${Interface}.+ ${Hops}.+ ${Protocol} -> Record
