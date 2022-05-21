@@ -1,4 +1,6 @@
 import textfsm
+from pprint import pprint
+import yaml
 
 show_switch = '''
 Command: show switch
@@ -12,7 +14,7 @@ Default Gateway    : 0.0.0.0
 Boot PROM Version  : Build 1.00-B04
 Firmware Version   : Build 2.94.B22
 Hardware Version   : A1
-System Name        :
+System Name        : test
 System Location    :
 System Uptime      : 0 days, 0 hours, 0 minutes, 56 seconds
 System Contact     :
@@ -26,7 +28,7 @@ WEB                : Enabled(TCP  80)
 RMON               : Disabled
 SSH                : Enabled(TCP  22)
 SSL                : Disabled
-Clipaging          : Disabled
+CLI Paging          : Disabled
 Syslog Global State: Disabled
 Dual Image         : Supported
 Password Encryption Status : Disabled
@@ -42,4 +44,7 @@ print(result)
 #two lists to dict:
 zip_iterator = zip(fsm.header, result[0])
 dictionary = dict(zip_iterator)
-print(dictionary)
+pprint(dictionary)
+
+with open('show_switch.yaml', 'w') as file:
+    documents = yaml.dump(dictionary, file)

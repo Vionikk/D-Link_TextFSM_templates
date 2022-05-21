@@ -27,5 +27,5 @@ Start
   ^.*System Location.*: ${Location}
   ^.*TELNET.*: ${Telnet}
   ^.*SSH.*: ${SSH}
-  ^.*Clipaging.*: ${Clipaging} -> Record
-
+  ^.*Clipaging.*: ${Clipaging}
+  ^.*CLI Paging.*: ${Clipaging} -> Record

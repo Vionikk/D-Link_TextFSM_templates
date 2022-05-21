@@ -1,0 +1,14 @@
+Boot: Build 1.00-B04
+Clipaging: Disabled
+Device: DES-3028
+Firmware: Build 2.94.B22
+Gateway: 0.0.0.0
+Hardware: A1
+IP: 192.168.31.235
+Location: ''
+Mac: 00-21-91-92-47-B3
+Name: test
+SSH: Enabled(TCP  22)
+Subnet: 255.255.255.0
+Telnet: Enabled(TCP  23)
+VLAN: default
