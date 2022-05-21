@@ -1,4 +1,4 @@
-Value Result (Success.|Fail!|Next possible completions:|Ambiguous token:)
+Value Result (Success.|Fail!|Next possible completions:|Ambiguous token:|Available commands:|Invalid input detected at ^marker)
 
 Start
   ^${Result} -> Record

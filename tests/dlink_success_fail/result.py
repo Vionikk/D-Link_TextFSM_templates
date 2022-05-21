@@ -22,6 +22,15 @@ Command: show
 
 Next possible completions: 
 
+test_switch:5#ttt  
+
+Available commands: 
+..                  ?                   cable_diag          clear               
+config              create              debug               delete              
+dir                 disable             download            enable              
+login               logout              ping                reboot              
+reconfig            reset               save                show                
+smtp    
 
 '''
 
